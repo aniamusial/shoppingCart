@@ -1,11 +1,14 @@
 <template>
+<div id="navMenuWrapper">
     <el-menu :default-active="activeIndex" 
+    theme="light"
     class="el-menu-demo" 
     mode="horizontal" 
     @select="handleSelect" 
-    background-color="#E1AD9D" 
-    active-text-color="#fff" 
-    text-color="#fff">
+    >
+        <el-menu-item id= "logo" index="0">
+            <logo></logo>
+        </el-menu-item>
         <el-menu-item index="1">Buy</el-menu-item>
         <el-submenu index="2">
 	    <template slot="title">About us</template>
@@ -13,11 +16,17 @@
 	    <el-menu-item index="2-2">Shipping</el-menu-item>
     </el-submenu>
     </el-menu>
+</div>
 </template>
 
 <script>
 
+import Logo from "./Logo"
+
 export default {
+    components: {
+        Logo
+    },
     data() {
         return {
             activeIndex: '1'

@@ -1,6 +1,6 @@
 <template>
     <el-row>
-        <el-col :span="12" v-for="product in products" :key="product.id">
+        <el-col :span="8" v-for="product in products" :key="product.id">
             <el-card :body-style="{ padding: '0px' }">
                 <img src="product.image[0]" class="productImage">
                 <div style="padding: 5%;">
