@@ -9,7 +9,7 @@
         <el-menu-item id= "logo" index="0">
             <logo></logo>
         </el-menu-item>
-        <el-menu-item index="1">Buy</el-menu-item>
+        <el-menu-item id = "buy" index="1">Buy</el-menu-item>
         <el-submenu index="2">
 	    <template slot="title">About us</template>
 	    <el-menu-item index="2-1">Our mission</el-menu-item>
@@ -21,10 +21,17 @@
 
 <style>
 
+#buy.el-menu-item {
+    border-bottom-color: #E1AD9D; 
+}
+
 .el-menu-item, .el-submenu {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+#logo.el-menu-item {
+    border-bottom-color: transparent;
+}
 
 </style>
 
