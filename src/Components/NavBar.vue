@@ -19,6 +19,15 @@
 </div>
 </template>
 
+<style>
+
+.el-menu-item, .el-submenu {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+</style>
+
 <script>
 
 import Logo from "./Logo"

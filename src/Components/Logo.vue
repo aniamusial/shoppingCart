@@ -16,6 +16,7 @@ img {
 span {
   color: #303133;
   font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 #logo img {
   margin-right: 5px;
