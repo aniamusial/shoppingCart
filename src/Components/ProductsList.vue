@@ -2,7 +2,7 @@
 	<el-row>
 	  <el-col :span="12" v-for="(product) in products" :key="product.sku">
 	    <el-card>
-	    	<img :src="product.images[0]" class="image">
+	    	<img :src="product.image[0]" class="image">
 	        <span>{{ product.name }}</span>
 	        <span>{{ product.price | currency }}</span>
 	        <div class="bottom clearfix">
@@ -53,7 +53,7 @@ import {Shop} from '../Shop/shop.js'
 export default {
     data() {
         return {
-           products: Shop.data.products 
+           products: Shop.$data.products 
         };
     },
     methods: {
