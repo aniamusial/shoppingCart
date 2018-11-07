@@ -3,17 +3,30 @@
     <nav-bar></nav-bar>
     <el-row :gutter="20">
       <el-col :span="12">
-        <h1>What's your choice?</h1>
+        <h1>What's your style?</h1>
         <products-list></products-list>
       </el-col>
       <el-col :span="8">
-        <h1>Your cart:</h1>
         <cart></cart>
         <p>Total cost:</p>
       </el-col>
     </el-row>
   </div>
 </template>
+
+<style>
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  color:  #303133;
+  display: block;
+  align-self: center;
+  margin: 10% 20%;
+  border: solid 3px #E1AD9D;
+  padding: 5%;
+}
+
+</style>
 
 <script>
 import {Shop} from "./Shop/shop"
