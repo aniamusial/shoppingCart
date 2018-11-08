@@ -18,7 +18,6 @@ export const Shop = new Vue ({
     methods: {
         addToCart(product) {
             if ((this.cart.findIndex(p => {return p.details.id === product.id })) === -1) {
-                this.cart.push ({
                     details: product, quantity: 1
                 })
             } else {
