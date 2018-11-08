@@ -3,20 +3,19 @@
     stripe
     style="width: 100%">
     <el-table-column
-	    prop="name"
+	    prop="details.name"
 		label="Name">
     </el-table-column>
     <el-table-column
-        prop="price"
-        label="Price"
-        :formatter="formatter">
+        label="Price">
+            <template scope='scope'>
+				{{ scope.row.details.price }}
+            </template>
     </el-table-column>
     <el-table-column
         prop="quantity"
-        label="Quantity"
-        :formatter="formatter">
+        label="Quantity">
     </el-table-column>
-    
 </el-table>
 </template>
 
@@ -25,8 +24,15 @@
 import {Shop} from "../Shop/shop"
 
     export default {
-        data() {
-            return Shop.$data.cart
+        computed: {
+            cart() {
+                return Shop.$data.cart
+            }
+        },
+        methods: {
+            addToCart(product) {
+                Shop.addToCart(product)
+            }
         }
     }
 

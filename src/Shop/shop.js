@@ -6,7 +6,7 @@ export const Shop = new Vue ({
         return {
             products,
             cart: []
-        }
+        };
     },
     computed: {
         totalCost() {
@@ -17,9 +17,13 @@ export const Shop = new Vue ({
     },
     methods: {
         addToCart(product) {
-            this.cart.push({
-                details: product, quantity: 1
-            })
+            if ((this.cart.findIndex(p => {return p.details.id === product.id })) === -1) {
+                this.cart.push ({
+                    details: product, quantity: 1
+                })
+            } else {
+                this.cart[this.cart.findIndex(p => {return p.details.id === product.id })].quantity++;
+            }
         }
     }
 })

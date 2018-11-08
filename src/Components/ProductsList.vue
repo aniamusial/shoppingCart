@@ -36,7 +36,7 @@ export default {
         };
     },
     methods: {
-        addToCart() {
+        addToCart(product) {
             Shop.addToCart(product)
         }
     }
