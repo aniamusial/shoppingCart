@@ -9,19 +9,15 @@
         <el-menu-item id= "logo" index="0">
             <logo></logo>
         </el-menu-item>
-        <el-menu-item id = "buy" index="1">Buy</el-menu-item>
-        <el-submenu index="2">
-	    <template slot="title">About us</template>
-	    <el-menu-item index="2-1">Our mission</el-menu-item>
-	    <el-menu-item index="2-2">Shipping</el-menu-item>
-    </el-submenu>
+        <el-menu-item id="menuItem" index="1">Buy</el-menu-item>
+        <el-menu-item id="menuItem" index="2">About us</el-menu-item>
     </el-menu>
 </div>
 </template>
 
 <style>
 
-#buy.el-menu-item {
+#menuItem.el-menu-item {
     border-bottom-color: #E1AD9D; 
 }
 
