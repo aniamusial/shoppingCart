@@ -1,6 +1,5 @@
 <template>
-    <el-table :data="cart"
-    stripe
+    <el-table id="cart" :data="cart"
     style="width: 100%">
     <el-table-column
 	    prop="details.name"
@@ -18,6 +17,14 @@
     </el-table-column>
 </el-table>
 </template>
+
+<style>
+
+.el-table {
+    font-family: Arial, Helvetica, sans-serif;
+    border: solid 3px #E1AD9D;
+}
+</style>
 
 <script>
 

@@ -1,6 +1,6 @@
 <template>
 	<el-row>
-	  <el-col :span="12" v-for="(product) in products" :key="product.sku">
+	  <el-col :span="12" v-for="(product) in products" :key="product.id">
 	    <el-card>
 	    	<img :src="product.image[0]" class="image">
 	        <span>{{ product.name }}</span>

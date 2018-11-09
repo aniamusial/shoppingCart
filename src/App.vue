@@ -8,7 +8,7 @@
       </el-col>
       <el-col :span="8">
         <cart></cart>
-        <p>Total cost: {{ totalCost }}</p>
+        <p><b>Total cost:</b> {{ totalCost }}</p>
       </el-col>
     </el-row>
   </div>
@@ -24,6 +24,11 @@ h1 {
   margin: 10% 20%;
   border: solid 3px #E1AD9D;
   padding: 5%;
+}
+
+p {
+  color: #444;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 </style>
