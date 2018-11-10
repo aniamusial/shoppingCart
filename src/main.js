@@ -4,6 +4,7 @@ import Element from 'element-ui'
 import locale from "element-ui/lib/locale/lang/en"
 import "element-ui/lib/theme-chalk/index.css"
 import VueRouter from 'vue-router'
+import Sticky from "vue-sticky-directive"
 
 import NavBar from './Components/NavBar.vue'
 import ProductsList from './Components/ProductsList.vue'
@@ -11,6 +12,7 @@ import Cart from './Components/Cart.vue'
 
 Vue.use(Element, {locale})
 Vue.use(VueRouter)
+Vue.use(Sticky)
 
 Vue.component('NavBar', NavBar)
 Vue.component('ProductsList', ProductsList)
