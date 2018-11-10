@@ -1,7 +1,7 @@
 [
     {
         "id": 1, 
-        "name": "Basic alpaca sweater", 
+        "name": "Alpaca sweater", 
         "price": 200, 
         "quantity": 3,
         "image": ["https://images.pexels.com/photos/1030946/pexels-photo-1030946.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"]

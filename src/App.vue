@@ -2,7 +2,7 @@
   <div id="app">
     <nav-bar></nav-bar>
     <el-row :gutter="20">
-      <el-col :span="12">
+      <el-col>
         <h1>What's your style?</h1>
         <products-list></products-list>
       </el-col>
