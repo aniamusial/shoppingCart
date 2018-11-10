@@ -1,7 +1,7 @@
 [
     {
         "id": 1, 
-        "name": "Basic alpaca sweater", 
+        "name": "Alpaca sweater", 
         "price": 200, 
         "quantity": 3,
         "image": ["https://images.pexels.com/photos/1030946/pexels-photo-1030946.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"]
@@ -20,12 +20,5 @@
         "price": 90,
         "quantity": 6,
         "image": ["https://images.pexels.com/photos/1182702/pexels-photo-1182702.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"]
-    },
-    {
-        "id": 4,
-        "name": "Sparkling grey boots",
-        "price": 150,
-        "quantity": 1,
-        "image": ["https://images.pexels.com/photos/1055691/pexels-photo-1055691.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260./assets/whiteshirt.jpg"]
     }
 ]

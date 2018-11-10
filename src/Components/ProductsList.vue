@@ -24,6 +24,10 @@
     font-family: Arial, Helvetica, sans-serif;
   }
 
+  .el-card {
+    margin: 8%;
+  }
+
 </style>
 
 <script>

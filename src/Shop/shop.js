@@ -17,12 +17,17 @@ export const Shop = new Vue ({
     },
     methods: {
         addToCart(product) {
-            if ((this.cart.findIndex(p => {return p.details.id === product.id })) === -1) {
-                this.cart.push({
+
+            const productIndex = this.cart.findIndex(p => {
+                return p.details.id === product.id 
+            })
+
+            if ( productIndex === -1) {
+                this.cart.push ({
                     details: product, quantity: 1
                 })     
             } else {
-                this.cart[this.cart.findIndex(p => {return p.details.id === product.id })].quantity++;
+                this.cart[productIndex].quantity++;
             }
         }
     }
