@@ -1,4 +1,5 @@
 <template>
+<div id="cartWrapper">
     <el-table id="cart" :data="cart"
     style="width: 100%">
     <el-table-column
@@ -16,13 +17,19 @@
         label="Quantity">
     </el-table-column>
 </el-table>
+<p><b>Total cost:</b> {{ totalCost }}</p>
+</div>
 </template>
 
 <style>
 
 .el-table {
     font-family: Arial, Helvetica, sans-serif;
-    border: solid 3px #E1AD9D;
+}
+
+p {
+  color: #444;
+  font-family: Arial, Helvetica, sans-serif;
 }
 </style>
 
@@ -34,6 +41,9 @@ import {Shop} from "../Shop/shop"
         computed: {
             cart() {
                 return Shop.$data.cart
+            },
+            totalCost() {
+                return Shop.totalCost
             }
         },
         methods: {

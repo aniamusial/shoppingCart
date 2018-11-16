@@ -1,6 +1,6 @@
 <template>
 <div id="navMenuWrapper">
-    <el-menu :default-active="activeIndex"  
+    <el-menu :default-active="activeIndex" 
     theme="light"
     class="el-menu-demo" 
     mode="horizontal" 
@@ -10,9 +10,13 @@
     <el-menu-item id= "logo" index="/" :route="{ name: 'Root'}">
         <logo></logo>
     </el-menu-item>
-    <el-menu-item id="menuItem" index="/buy" :route="{ name: 'Root'}" >Buy</el-menu-item>
+    <el-menu-item id="menuItem" index="/buy" :route="{ name: 'Buy'}" >Buy</el-menu-item>
     <el-menu-item id="menuItem" index="/about" :route="{ name: 'About' }">About us</el-menu-item>
+    <el-button type="info" icon="el-icon-star-off" @click="showCart" circle></el-button>
     </el-menu>
+    <div class="cartIcon" v-show="showCart">
+        <cart z-index="10" position="absolute"></cart>
+    </div>
 </div>
 </template>
 
@@ -28,6 +32,13 @@
 
 #logo.el-menu-item {
     border-bottom-color: transparent;
+}
+
+.el-button {
+    margin-left: 70%;
+    margin-top: 0.5em;
+    font-size: 1em;
+
 }
 
 </style>

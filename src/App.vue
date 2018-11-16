@@ -11,7 +11,6 @@
       </el-col>
       <el-col :span="8">
         <cart></cart>
-        <p><b>Total cost:</b> {{ totalCost }}</p>
       </el-col>
     </el-row>
     </div>
@@ -29,23 +28,12 @@ h1 {
   padding: 5%;
 }
 
-p {
-  color: #444;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
 </style>
 
 <script>
-import {Shop} from "./Shop/shop"
 
 export default {
-  name: 'app',
-   
-  computed: {
-    totalCost(){
-      return Shop.totalCost
-    }
-  } 
+  name: 'app'
 }
+
 </script>
